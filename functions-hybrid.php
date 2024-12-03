@@ -1,4 +1,5 @@
 <?php
+//
 // Enqueue script into block editor
 function hybrid_theme_enqueue_scripts() {
   wp_enqueue_script(
@@ -11,6 +12,7 @@ function hybrid_theme_enqueue_scripts() {
 }
 add_action( 'enqueue_block_editor_assets', 'hybrid_theme_enqueue_scripts' );
  
+//
 // Enqueue styles in block editor and front end
 function hybrid_theme_enqueue_styles() {
   wp_enqueue_style(
@@ -23,8 +25,19 @@ function hybrid_theme_enqueue_styles() {
 }
 add_action( 'enqueue_block_assets', 'hybrid_theme_enqueue_styles' );
 
+//
 // Add support for block template parts
 function hybrid_add_template_parts_support() {
   add_theme_support( 'block-template-parts' );
 }
 add_action( 'after_setup_theme', 'hybrid_add_template_parts_support' );
+
+//
+// Register block pattern categories
+function hybrid_register_pattern_categories() {
+  register_block_pattern_category(
+      'hybrid-patterns',
+      array( 'label' => __( 'Hybrid Patterns', 'hybrid-theme' ) )
+  );
+ }
+ add_action( 'init', 'hybrid_register_pattern_categories' );
