@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "layout": {
+      "contentSize": "768px",
+      "wideSize": "1024px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#DE7D0D",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#7C0DDE",
+          "name": "Secondary"
+        }
+      ]
+    }
+  }
+}
