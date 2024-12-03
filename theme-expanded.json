@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "layout": {
+      "contentSize": "1024px",
+      "wideSize": "1280px", // align-wide
+    },
+    "typography": {
+      "customFontSize": false, // disable-custom-font-sizes
+      "lineHeight": true, // custom-line-height
+      "defaultFontSizes": false,
+
+      // editor-font-sizes
+      "fontSizes": [
+        {
+          "name": "Regular",
+          "slug": "regular",
+          "size": "16px"
+        },
+        {
+          "name": "Very Big",
+          "slug": "very-big",
+          "size": "36px"
+        }
+      ]
+    },
+    "color": {
+      "custom": false, // disable-custom-colors
+      "customGradient": false, // disable-custom-gradients
+
+      // editor-color-palette
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#DE7D0D"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#7C0DDE"
+        },
+        {
+          "name": "Dusty Blue",
+          "slug": "dusty-blue",
+          "color": "#367cb3"
+        },
+        {
+          "name": "Faded Brown",
+          "slug": "faded-brown",
+          "color": "#7a6a53"
+        }
+      ],
+
+      // editor-gradient-presets
+      "gradients": [
+        {
+          "name": "Dusty to Faded",
+          "slug": "dusty-to-faded",
+          "gradient": "linear-gradient(135deg, #367cb3 0%, #7a6a53 100%)"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [ "px", "em", "rem", "%" ] // custom-units
+    },
+
+    // custom-spacing (done on a per block basis)
+    "blocks": {
+      "core/columns": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        }
+      }
+    }
+  }
+}

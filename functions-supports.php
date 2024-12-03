@@ -4,13 +4,13 @@ function hybrid_add_theme_supports() {
   add_theme_support( 'disable-custom-colors' );
   add_theme_support( 'disable-custom-gradients' );
   add_theme_support( 'disable-custom-font-sizes' );
- 
+
   // Cannot use alongside a theme.json file
   add_theme_support( 'align-wide' );
   add_theme_support( 'custom-line-height' );
   add_theme_support( 'custom-spacing' );
   add_theme_support( 'custom-units', array( 'rem', 'em', 'px', 'vw', 'vh' ) );
- 
+
   add_theme_support(
     'editor-color-palette',
     array(
@@ -26,7 +26,7 @@ function hybrid_add_theme_supports() {
       ),
     )
   );
- 
+
   add_theme_support(
     'editor-gradient-presets',
     array(
@@ -37,7 +37,7 @@ function hybrid_add_theme_supports() {
       ),
     )
   );
- 
+
   add_theme_support(
     'editor-font-sizes',
     array(
@@ -53,5 +53,5 @@ function hybrid_add_theme_supports() {
       ),
     )
   );
- }
- add_action( 'after_setup_theme','hybrid_add_theme_supports' );
+}
+add_action( 'after_setup_theme','hybrid_add_theme_supports' );
