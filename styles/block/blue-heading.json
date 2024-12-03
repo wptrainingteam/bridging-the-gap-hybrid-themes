@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "slug": "dark-blue-bg",
+  "title": "Dark Blue Bg",
+  "blockTypes": [ "core/heading", "core/paragraph" ],
+  "styles": {
+    "color": {
+      "background": "#2860a6",
+      "text": "#ffffff"
+    },
+    "spacing": {
+      "padding": {
+        "top": "0.5em",
+        "right": "1em",
+        "bottom": "0.5em",
+        "left": "1em"
+      }
+    }
+  }
+}
