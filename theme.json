@@ -19,6 +19,15 @@
           "name": "Secondary"
         }
       ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "slug": "default",
+          "name": "Default",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+        }
+      ]
     }
   }
 }
